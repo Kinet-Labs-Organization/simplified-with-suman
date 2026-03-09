@@ -3,7 +3,7 @@ import { useLayoutEffect } from 'react';
 export const useScrollAnimation = () => {
     useLayoutEffect(() => {
         const observerOptions = {
-            threshold: 0.1,
+            threshold: 0.01, // Trigger when a small part of the element is visible
             rootMargin: '0px 0px -50px 0px'
         };
 

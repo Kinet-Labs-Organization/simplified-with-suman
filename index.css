@@ -579,3 +579,32 @@ footer {
     .episodes-grid, .categories-grid { grid-template-columns: 1fr; }
     .policy-content { padding: 24px; }
 }
+
+/* Article Layout */
+.article-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile-first: single column */
+    gap: 48px;
+    align-items: start;
+}
+
+.sidebar-desktop {
+    display: none; /* Hide desktop sidebar on mobile */
+}
+
+.sidebar-mobile {
+    display: block; /* Show mobile ad slot */
+}
+
+/* Tablet and Desktop */
+@media (min-width: 1024px) {
+    .article-layout {
+        grid-template-columns: 1fr 320px; /* Two columns on desktop */
+    }
+    .sidebar-desktop {
+        display: block; /* Show desktop sidebar */
+    }
+    .sidebar-mobile {
+        display: none; /* Hide mobile ad slot */
+    }
+}

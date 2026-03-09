@@ -10,8 +10,7 @@ const IsYourPhoneListeningToYou = () => {
             <div className="container">
                 <Link to="/all-episodes" style={{color: 'var(--cyan)', marginBottom: '24px', display: 'inline-block'}}>&larr; Back to Episodes</Link>
                 
-                {/* Main layout grid for article and sidebar. Note: This layout is not responsive for mobile screens. */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: '48px', alignItems: 'start' }}>
+                <div className="article-layout">
                     <div className="glass-card policy-content">
                         {/* Header Section */}
                         <header style={{textAlign: 'center'}}>
@@ -32,6 +31,13 @@ const IsYourPhoneListeningToYou = () => {
                             </div>
                         </div>
 
+                        {/* Sidebar Ad for Mobile/Tablet */}
+                        <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
+                            <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                                [ Ad Space - 300x250 ]
+                            </div>
+                        </aside>
+
                         {/* Blog Content */}
                         <div className="blog-content" style={{color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.05rem'}}>
                             
@@ -42,6 +48,11 @@ const IsYourPhoneListeningToYou = () => {
                             <p style={{marginBottom: '40px'}}>
                                 Creepy, right? It feels like the phone is reading our minds or constantly eavesdropping on our private conversations. If you’re worried that your private talks are leaking, then you are in the right place. Today, we are going to pull back the curtain on this "digital magic."
                             </p>
+
+                            {/* Ad Placeholder 1 */}
+                            <div style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px' }}>
+                                [ Ad Space - 728x90 ]
+                            </div>
 
                             <h2 style={{color: 'var(--cyan)', marginTop: '48px', marginBottom: '24px', fontSize: '1.8rem'}}>The "Magic" Behind the Ads</h2>
                             <p style={{marginBottom: '24px'}}>
@@ -84,6 +95,11 @@ const IsYourPhoneListeningToYou = () => {
                                     <strong>Identity Theft:</strong> With SMS permission, they can read OTPs and manipulate your social media.
                                 </li>
                             </ul>
+
+                            {/* Ad Placeholder 2 */}
+                            <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '300px' }}>
+                                [ Ad Space - 300x250 ]
+                            </div>
 
                             <h2 style={{color: 'var(--cyan)', marginTop: '48px', marginBottom: '24px', fontSize: '1.8rem'}}>Deep Dive: The Science of Spying</h2>
                             <p style={{marginBottom: '24px'}}>It's not just about "listening" with ears. There are three fascinating technologies at play:</p>
@@ -128,7 +144,7 @@ const IsYourPhoneListeningToYou = () => {
                     </div>
 
                     {/* Sidebar for Ads */}
-                    <aside style={{ position: 'sticky', top: '120px' }}>
+                    <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
                         <div style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                             [ Ad Space - 300x600 ]
                         </div>
