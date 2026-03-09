@@ -30,7 +30,7 @@ const Home = () => {
                         </div>
                         <h3 className="ep-title">Is your phone listening to you?</h3>
                         <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
-                        <Link to="/episode/1" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                        <Link to="/is-your-phone-listening-to-you" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
                     </div>
 
                     <div className="glass-card">

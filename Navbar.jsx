@@ -54,7 +54,7 @@ const Navbar = () => {
                         Episodes <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
                     </a>
                     <div className="dropdown-content">
-                        <Link to="/episode/1">Ep 01: Is your phone listening?</Link>
+                        <Link to="/is-your-phone-listening-to-you">Ep 01: Is your phone listening?</Link>
                         <Link to="/episode/2">Ep 02: AI Magic</Link>
                         <Link to="/episode/3">Ep 03: Time beats Money</Link>
                         <Link to="/episode/4">Ep 04: Financial Safety</Link>

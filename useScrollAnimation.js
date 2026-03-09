@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 export const useScrollAnimation = () => {
-    useEffect(() => {
+    useLayoutEffect(() => {
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -46,8 +46,7 @@ export const useScrollAnimation = () => {
             );
         };
 
-        // Delay to ensure DOM is ready
-        setTimeout(() => {
+        const prepareAnimations = () => {
             // Filter out sections that contain glass-cards to avoid double animation
             const sections = Array.from(document.querySelectorAll('section:not(.hero):not(#about)'));
             const emptySections = sections.filter(section => section.querySelectorAll('.glass-card').length === 0);
@@ -79,7 +78,9 @@ export const useScrollAnimation = () => {
                     observer.observe(el);
                 }
             });
-        }, 100);
+        };
+
+        prepareAnimations();
 
         return () => observer.disconnect();
     }, []); // Run once on mount
