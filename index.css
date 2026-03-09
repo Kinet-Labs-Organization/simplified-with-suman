@@ -33,6 +33,12 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.fonts-loaded {
+    opacity: 1;
 }
 
 h1, h2, h3, h4 {

@@ -7,4 +7,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-)
+);
+
+document.fonts.ready.then(() => {
+  document.body.classList.add('fonts-loaded');
+});

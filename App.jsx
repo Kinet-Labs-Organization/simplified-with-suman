@@ -7,15 +7,19 @@ import Home from './Home';
 import AllEpisodes from './AllEpisodes';
 import AllResources from './AllResources';
 import { PrivacyPolicy, TermsOfUse, Disclaimer, CookiePolicy } from './LegalPages';
+import EpisodePage from './EpisodePage';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/all-episodes" element={<AllEpisodes />} />
+          <Route path="/episode/:id" element={<EpisodePage />} />
           <Route path="/all-resources" element={<AllResources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
