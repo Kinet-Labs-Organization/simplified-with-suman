@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified with Suman (SWS)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <nav class="glass">
+        <div class="logo">
+            <div class="logo-box">SWS</div>
+            <span class="logo-text">Simplified with Suman</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <div class="dropdown">
+                <a href="#episodes" class="dropbtn">Episodes <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="episode1.html">Ep 01: Is your phone listening?</a>
+                    <a href="episode2.html">Ep 02: AI Magic</a>
+                    <a href="episode3.html">Ep 03: Time beats Money</a>
+                    <a href="episode4.html">Ep 04: Financial Safety</a>
+                    <div style="height: 1px; background: var(--glass-border); margin: 8px 16px;"></div>
+                    <a href="all-episodes.html" style="color: var(--cyan); font-weight: 600;">View All Episodes &rarr;</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#resources" class="dropbtn">Resources <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Newsletter</a>
+                    <a href="#">Reading List</a>
+                    <a href="#">Tools & Gear</a>
+                    <a href="#">Community</a>
+                    <div style="height: 1px; background: var(--glass-border); margin: 8px 16px;"></div>
+                    <a href="all-resources.html" style="color: var(--cyan); font-weight: 600;">View All Resources &rarr;</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
+            <button class="cta-btn" style="display: none; width: 100%; justify-content: center; margin-top: 12px;">
+                <i class="fa-solid fa-play"></i> Subscribe
+            </button>
+        </div>
+        <button class="cta-btn desktop-cta">
+            <span class="mono" style="font-size: 0.75rem; background: rgba(0,0,0,0.2); padding: 2px 8px; border-radius: 10px; margin-right: 8px;">4 Live</span>
+            <i class="fa-solid fa-play"></i> Subscribe
+        </button>
+        <button class="hamburger" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero container">
+            <div>
+                <div class="badge mono">New Episode Every Week</div>
+                <h1>Big ideas.<br>15 minutes.<br>Zero jargon.</h1>
+                <p>One real question. First principles. One usable takeaway. Demystifying trending tech, software, trading, and finance for curious minds in India.</p>
+                <button class="cta-btn" style="margin: 0 auto; font-size: 1.1rem; padding: 16px 32px;">Start Watching Ep 01</button>
+            </div>
+        </section>
+
+        <section id="episodes" class="container">
+            <div class="section-header">
+                <h2>Latest Episodes</h2>
+                <a href="all-episodes.html" style="color: var(--cyan); border-bottom: 1px solid var(--cyan);">View all</a>
+            </div>
+            
+            <div class="episodes-grid">
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 01</span>
+                        <span>Privacy & Security</span>
+                    </div>
+                    <h3 class="ep-title">Is your phone listening to you?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
+                    <a href="episode1.html" class="play-btn" style="display:inline-block; text-decoration:none;"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 02</span>
+                        <span style="color: var(--violet)">AI & ML</span>
+                    </div>
+                    <h3 class="ep-title">What's behind the curtain of AI magic?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">LLMs, prompt engineering, and why AI hallucinates. No math required.</p>
+                    <a href="episode2.html" class="play-btn" style="display:inline-block; text-decoration:none;"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 03</span>
+                        <span style="color: var(--amber)">Personal Finance</span>
+                    </div>
+                    <h3 class="ep-title">Time beats money in building wealth</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">The actual math behind SIPs, compounding, and tracking the Nifty 50.</p>
+                    <a href="episode3.html" class="play-btn" style="display:inline-block; text-decoration:none;"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 04</span>
+                        <span style="color: var(--rose)">Personal Finance</span>
+                    </div>
+                    <h3 class="ep-title">Are you really financially safe?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Emergency funds, insurance basics, and stress-testing your savings in ₹.</p>
+                    <a href="episode4.html" class="play-btn" style="display:inline-block; text-decoration:none;"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="container">
+            <div class="section-header">
+                <h2>Resources and Tools</h2>
+                <a href="all-resources.html" style="color: var(--cyan); border-bottom: 1px solid var(--cyan);">View all</a>
+            </div>
+            <div class="categories-grid">
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-newspaper" style="color: var(--indigo);"></i></div>
+                    <div class="cat-info">
+                        <h3>Newsletter</h3>
+                        <p>Weekly insights & updates</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-book-open" style="color: var(--green);"></i></div>
+                    <div class="cat-info">
+                        <h3>Reading List</h3>
+                        <p>Books that shaped my thinking</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-wrench" style="color: var(--amber);"></i></div>
+                    <div class="cat-info">
+                        <h3>Tools & Gear</h3>
+                        <p>My software & hardware stack</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-users" style="color: var(--rose);"></i></div>
+                    <div class="cat-info">
+                        <h3>Community</h3>
+                        <p>Join the conversation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="container">
+            <div class="section-header">
+                <h2>Explore by Topic</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="cat-info">
+                        <h3>AI & Machine Learning</h3>
+                        <p>LLMs, agents, hallucination</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="cat-info">
+                        <h3>Privacy & Security</h3>
+                        <p>Tracking, VPNs, phishing</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="cat-info">
+                        <h3>Trading & Markets</h3>
+                        <p>Algo trading, risk, SEBI rules</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-coins"></i></div>
+                    <div class="cat-info">
+                        <h3>Crypto & Web3</h3>
+                        <p>DeFi, wallets, smart contracts</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <div class="cat-info">
+                        <h3>Personal Finance</h3>
+                        <p>SIPs, index funds, compounding</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+                    <div class="cat-info">
+                        <h3>System Design</h3>
+                        <p>APIs, cloud, how apps scale</p>
+                    </div>
+                </div>
+                <div class="glass-card cat-card">
+                    <div class="cat-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="cat-info">
+                        <h3>Career in AI Era</h3>
+                        <p>Micro-SaaS, tools, building</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <div class="glass-card about-content" style="padding: 48px;">
+                <div class="about-text">
+                    <div class="badge mono" style="color: var(--rose); border-color: rgba(244, 63, 94, 0.3);">About the Host</div>
+                    <h2>Hi, I'm Suman Mandal.</h2>
+                    <p>I'm a Technical Lead, Micro-SaaS builder, and AI enthusiast based out of Kolkata. By day, I architect software solutions and explore algorithmic trading strategies. By night, I'm on a mission to make technology accessible.</p>
+                    <p>I started <strong>Simplified with Suman (SWS)</strong> because the world of tech, finance, and software has become drowning in jargon. Whether we are discussing the latest RBI/SEBI regulations, how LLMs actually process data, or how to build compounding wealth in India, my goal is simple: explain it in 15 minutes, with zero engineering speak.</p>
+                    <p>Just one real question, answered from first principles, leaving you with one usable takeaway.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="glass" style="width: 100%; aspect-ratio: 1; border-radius: 24px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(108, 71, 255, 0.1), rgba(6, 182, 212, 0.1));">
+                        <i class="fa-solid fa-microphone-lines" style="font-size: 4rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-col" style="max-width: 300px;">
+                <div class="logo-box" style="display: inline-block; margin-bottom: 16px;">SWS</div>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Big ideas. 15 minutes. Zero jargon. Explaining trending tech and finance for curious minds.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
+                    <li><a href="#about">About Suman</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">YouTube Channel</a></li>
+                    <li><a href="#">X / Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal (India)</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy (DPDPA 2023)</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="legal-text">
+            <p>&copy; 2026 Suman Mandal. All rights reserved. Made in Kolkata, India.</p>
+            <p style="margin-top: 8px;">Disclaimer: Content provided on SWS is for educational purposes only and does not constitute financial or investment advice. Always consult with a SEBI-registered advisor before making investment decisions.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

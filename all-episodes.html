@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Episodes | SWS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+
+    <nav class="glass">
+        <div class="logo" style="display:flex; align-items:center; gap:12px;">
+            <div class="logo-box">SWS</div>
+            <span style="font-weight:700;">Simplified with Suman</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="sws.html#home">Home</a>
+            <a href="sws.html#categories">Categories</a>
+            <div class="dropdown">
+                <a href="sws.html#episodes" class="dropbtn" style="color:#fff;">Episodes <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="episode1.html">Ep 01: Is your phone listening?</a>
+                    <a href="episode2.html">Ep 02: AI Magic</a>
+                    <a href="episode3.html">Ep 03: Time beats Money</a>
+                    <a href="episode4.html">Ep 04: Financial Safety</a>
+                    <div style="height: 1px; background: var(--glass-border); margin: 8px 0;"></div>
+                    <a href="all-episodes.html" style="color: var(--cyan); font-weight: 600;">View All Episodes &rarr;</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="sws.html#resources" class="dropbtn">Resources <i class="fa-solid fa-chevron-down" style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Newsletter</a>
+                    <a href="#">Reading List</a>
+                    <a href="#">Tools & Gear</a>
+                    <a href="#">Community</a>
+                    <div style="height: 1px; background: var(--glass-border); margin: 8px 0;"></div>
+                    <a href="all-resources.html" style="color: var(--cyan); font-weight: 600;">View All Resources &rarr;</a>
+                </div>
+            </div>
+            <a href="sws.html#about">About</a>
+        </div>
+        <a href="sws.html" class="cta-btn desktop-cta" style="text-decoration: none;">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+        <button class="hamburger" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <main style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h1 style="font-size: 3rem; margin-bottom: 16px;">All Episodes</h1>
+                <p style="color: var(--text-muted); max-width: 600px;">Explore our complete library of simplified tech, finance, and software engineering topics. New episodes every week.</p>
+            </div>
+
+            <div class="episodes-grid">
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 01</span>
+                        <span>Privacy & Security</span>
+                    </div>
+                    <h3 class="ep-title">Is your phone listening to you?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
+                    <a href="episode1.html" class="play-btn"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 02</span>
+                        <span style="color: var(--violet)">AI & ML</span>
+                    </div>
+                    <h3 class="ep-title">What's behind the curtain of AI magic?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">LLMs, prompt engineering, and why AI hallucinates. No math required.</p>
+                    <a href="episode2.html" class="play-btn"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 03</span>
+                        <span style="color: var(--amber)">Personal Finance</span>
+                    </div>
+                    <h3 class="ep-title">Time beats money in building wealth</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">The actual math behind SIPs, compounding, and tracking the Nifty 50.</p>
+                    <a href="episode3.html" class="play-btn"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+
+                <div class="glass-card">
+                    <div class="ep-meta mono">
+                        <span>EP 04</span>
+                        <span style="color: var(--rose)">Personal Finance</span>
+                    </div>
+                    <h3 class="ep-title">Are you really financially safe?</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Emergency funds, insurance basics, and stress-testing your savings in ₹.</p>
+                    <a href="episode4.html" class="play-btn"><i class="fa-solid fa-play"></i> Watch (10:00)</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Suman Mandal. All rights reserved.</p>
+            <div style="margin-top: 16px; display: flex; justify-content: center; gap: 24px;">
+                <a href="sws.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
