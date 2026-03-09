@@ -16,6 +16,8 @@ export const useScrollAnimation = () => {
                         element.style.animation = 'fadeIn 0.8s ease-out forwards';
                     } else if (element.classList.contains('about-content')) {
                         element.style.animation = 'slideInLeft 0.6s ease-out forwards';
+                    } else if (element.classList.contains('section-header')) {
+                        element.style.animation = 'fadeInUp 0.6s ease-out forwards';
                     } else if (element.classList.contains('glass-card')) {
                         if (element.closest('.episodes-grid')) {
                             element.style.animation = 'fadeInUp 0.6s ease-out forwards';
@@ -46,12 +48,15 @@ export const useScrollAnimation = () => {
 
         // Delay to ensure DOM is ready
         setTimeout(() => {
+            // Filter out sections that contain glass-cards to avoid double animation
+            const sections = Array.from(document.querySelectorAll('section:not(.hero):not(#about)'));
+            const emptySections = sections.filter(section => section.querySelectorAll('.glass-card').length === 0);
+
             const elementsToObserve = [
                 document.querySelector('.hero'),
-                ...document.querySelectorAll('.episodes-grid .glass-card'),
-                ...document.querySelectorAll('.categories-grid .glass-card'),
-                document.querySelector('#about .about-content'),
-                ...document.querySelectorAll('section:not(.hero):not(#about)')
+                ...document.querySelectorAll('.section-header'),
+                ...document.querySelectorAll('.glass-card'),
+                ...emptySections
             ];
 
             elementsToObserve.forEach(el => {
