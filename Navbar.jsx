@@ -16,7 +16,11 @@ const Navbar = () => {
                 <span className="logo-text">Simplified with Suman</span>
             </Link>
             
-            <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`} id="navLinks">
+            <div 
+                className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`} 
+                id="navLinks"
+                style={isMobileMenuOpen ? { maxHeight: 'calc(100vh - 120px)', overflowY: 'auto' } : {}}
+            >
                 {/* Logic: If on home, use anchor links. If on other pages, link to home + anchor */}
                 <Link to="/" className={isHome ? 'active' : ''} onClick={closeMenu}>Home</Link>
                 
