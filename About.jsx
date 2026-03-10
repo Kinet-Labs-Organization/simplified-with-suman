@@ -8,7 +8,7 @@ const About = () => {
         <main style={{paddingTop: '140px', paddingBottom: '80px'}}>
             <div className="container article-layout">
                 <div>
-                    <section id="categories">
+                    <div id="categories">
                         <div className="section-header">
                             <h2>Explore by Topic</h2>
                         </div>
@@ -28,7 +28,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
 
                     {/* Mobile Ad */}
                     <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
@@ -37,7 +37,7 @@ const About = () => {
                         </div>
                     </aside>
 
-                    <section id="about">
+                    <div id="about" style={{marginTop: '40px'}}>
                         <div className="glass-card about-content" style={{padding: '48px'}}>
                             <div className="about-text">
                                 <div className="badge mono" style={{color: 'var(--rose)', borderColor: 'rgba(244, 63, 94, 0.3)'}}>About the Host</div>
@@ -52,7 +52,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
 
                 {/* Desktop Sidebar */}
