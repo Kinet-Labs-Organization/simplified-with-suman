@@ -1,43 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('');
     const location = useLocation();
     const isHome = location.pathname === '/';
 
     const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
     const closeMenu = () => setIsMobileMenuOpen(false);
-
-    // Scroll Spy Logic
-    useEffect(() => {
-        if (!isHome) {
-            setActiveSection('');
-            return;
-        }
-
-        const navSections = document.querySelectorAll('section[id]');
-        const observerOptions = {
-            rootMargin: '-20% 0px -79% 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.getAttribute('id'));
-                }
-            });
-        }, observerOptions);
-
-        navSections.forEach(section => observer.observe(section));
-
-        return () => observer.disconnect();
-    }, [isHome]);
-
-    const getLinkClass = (sectionId) => {
-        return activeSection === sectionId ? 'active' : '';
-    };
 
     return (
         <nav className="glass">
@@ -48,12 +18,15 @@ const Navbar = () => {
             
             <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`} id="navLinks">
                 {/* Logic: If on home, use anchor links. If on other pages, link to home + anchor */}
-                <a href={isHome ? "#home" : "/#home"} className={getLinkClass('home')} onClick={closeMenu}>Home</a>
+                <Link to="/" className={isHome ? 'active' : ''} onClick={closeMenu}>Home</Link>
                 
                 <div className="dropdown">
-                    <a href={isHome ? "#episodes" : "/#episodes"} className={`dropbtn ${getLinkClass('episodes')}`} onClick={closeMenu}>
+                    <Link to="/all-episodes"
+                        className={`dropbtn ${location.pathname === '/all-episodes' || location.pathname.startsWith('/episode/') || location.pathname === '/is-your-phone-listening-to-you' ? 'active' : ''}`}
+                        onClick={closeMenu}
+                    >
                         Episodes <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-content">
                         <Link to="/is-your-phone-listening-to-you" onClick={closeMenu}>Ep 01: Is your phone listening?</Link>
                         <Link to="/episode/2" onClick={closeMenu}>Ep 02: AI Magic</Link>
@@ -65,7 +38,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="dropdown">
-                    <a href={isHome ? "#resources" : "/#resources"} className={`dropbtn ${getLinkClass('resources')}`} onClick={closeMenu}>
+                    <a href={isHome ? "#resources" : "/#resources"} className="dropbtn" onClick={closeMenu}>
                         Resources <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
                     </a>
                     <div className="dropdown-content">
