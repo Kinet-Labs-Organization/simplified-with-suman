@@ -557,7 +557,10 @@ footer {
     .cta-btn { display: none; } /* Move to menu in mobile */
 
     section { padding: 60px 0; }
-    .hero { padding-top: 100px; }
+    .hero {
+        padding-top: 150px;
+        justify-content: flex-start;
+    }
 
     .dropdown {
         display: block;
