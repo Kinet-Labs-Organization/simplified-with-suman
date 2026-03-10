@@ -78,8 +78,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <a href={isHome ? "#categories" : "/#categories"} className={getLinkClass('categories')} onClick={closeMenu}>Categories</a>
-                <a href={isHome ? "#about" : "/#about"} className={getLinkClass('about')} onClick={closeMenu}>About</a>
+                <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>About</Link>
 
                 <button className="cta-btn" style={{display: isMobileMenuOpen ? 'flex' : 'none', width: '100%', justifyContent: 'center', marginTop: '12px'}} onClick={closeMenu}>
                     <i className="fa-solid fa-play"></i> Subscribe

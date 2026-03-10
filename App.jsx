@@ -4,6 +4,7 @@ import Layout from './Layout';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
+import About from './About';
 import AllEpisodes from './AllEpisodes';
 import AllResources from './AllResources';
 import { PrivacyPolicy, TermsOfUse, Disclaimer, CookiePolicy } from './LegalPages';
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/all-episodes" element={<AllEpisodes />} />
           <Route path="/episode/:id" element={<EpisodePage />} />
           <Route path="/is-your-phone-listening-to-you" element={<IsYourPhoneListeningToYou />} />
