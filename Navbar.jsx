@@ -38,9 +38,12 @@ const Navbar = () => {
                 </div>
 
                 <div className="dropdown">
-                    <a href={isHome ? "#resources" : "/#resources"} className="dropbtn" onClick={closeMenu}>
+                    <Link to="/all-resources"
+                        className={`dropbtn ${location.pathname === '/all-resources' ? 'active' : ''}`}
+                        onClick={closeMenu}
+                    >
                         Resources <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
-                    </a>
+                    </Link>
                     <div className="dropdown-content">
                         <a href="#" onClick={closeMenu}>Newsletter</a>
                         <a href="#" onClick={closeMenu}>Reading List</a>
