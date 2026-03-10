@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
             <div className="orb orb-3"></div>
             {children}
             {showAd && (
-                <div className="bottom-ad-banner" style={{ animation: 'fadeInUp 0.5s ease-out' }}>
+                <div id="ad-slot-fixed-bottom-banner" className="bottom-ad-banner" style={{ animation: 'fadeInUp 0.5s ease-out' }}>
                     <div style={{ color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                         [ Fixed Bottom Ad - 728x90 ]
                     </div>

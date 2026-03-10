@@ -69,7 +69,7 @@ const Home = () => {
 
                     {/* Ad 1 for Mobile */}
                     <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
-                        <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                        <div id="ad-slot-home-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                             [ Ad Space - 300x250 ]
                         </div>
                     </aside>
@@ -94,7 +94,7 @@ const Home = () => {
 
                 {/* Ad 1 for Desktop */}
                 <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                    <div style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                    <div id="ad-slot-home-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                         [ Ad Space - 300x600 ]
                     </div>
                 </aside>
@@ -125,7 +125,7 @@ const Home = () => {
 
             {/* Ad Placeholder 2 */}
             <div className="container" style={{ padding: '40px 24px' }}>
-                <div style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px', width: '100%' }}>
+                <div id="ad-slot-home-bottom" style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px', width: '100%' }}>
                     [ Ad Space - 728x90 ]
                 </div>
             </div>

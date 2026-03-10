@@ -33,7 +33,7 @@ const IsYourPhoneListeningToYou = () => {
 
                         {/* Sidebar Ad for Mobile/Tablet */}
                         <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
-                            <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                            <div id="ad-slot-episode-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                                 [ Ad Space - 300x250 ]
                             </div>
                         </aside>
@@ -50,7 +50,7 @@ const IsYourPhoneListeningToYou = () => {
                             </p>
 
                             {/* Ad Placeholder 1 */}
-                            <div style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px' }}>
+                            <div id="ad-slot-episode-top-banner" style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px' }}>
                                 [ Ad Space - 728x90 ]
                             </div>
 
@@ -97,7 +97,7 @@ const IsYourPhoneListeningToYou = () => {
                             </ul>
 
                             {/* Ad Placeholder 2 */}
-                            <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '300px' }}>
+                            <div id="ad-slot-episode-mid-content" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '48px auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '300px' }}>
                                 [ Ad Space - 300x250 ]
                             </div>
 
@@ -145,7 +145,7 @@ const IsYourPhoneListeningToYou = () => {
 
                     {/* Sidebar for Ads */}
                     <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                        <div style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                        <div id="ad-slot-episode-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                             [ Ad Space - 300x600 ]
                         </div>
                     </aside>

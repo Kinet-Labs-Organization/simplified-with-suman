@@ -14,7 +14,7 @@ const AllResources = () => {
 
                     {/* Mobile Ad */}
                     <aside className="sidebar-mobile" style={{ margin: '0 0 40px 0' }}>
-                        <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                        <div id="ad-slot-resources-page-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                             [ Ad Space - 300x250 ]
                         </div>
                     </aside>
@@ -60,7 +60,7 @@ const AllResources = () => {
 
                 {/* Desktop Sidebar */}
                 <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                    <div style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                    <div id="ad-slot-resources-page-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                         [ Ad Space - 300x600 ]
                     </div>
                 </aside>
