@@ -34,6 +34,7 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     opacity: 0;
+    padding-bottom: 90px; /* Space for fixed bottom ad */
     transition: opacity 0.5s ease;
 }
 
@@ -56,6 +57,23 @@ a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+/* Fixed Bottom Ad Banner */
+.bottom-ad-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(7, 6, 15, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
 }
 
 /* Background Elements */
