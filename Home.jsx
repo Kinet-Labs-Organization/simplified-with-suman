@@ -16,71 +16,89 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="episodes" className="container">
-                <div className="section-header">
-                    <h2>Latest Episodes</h2>
-                    <Link to="/all-episodes" style={{color: 'var(--cyan)', borderBottom: '1px solid var(--cyan)'}}>View all</Link>
-                </div>
-                
-                <div className="episodes-grid">
-                    <div className="glass-card">
-                        <div className="ep-meta mono">
-                            <span>EP 01</span>
-                            <span>Privacy & Security</span>
+            <div className="container article-layout">
+                <div> {/* Main content column */}
+                    <section id="episodes">
+                        <div className="section-header">
+                            <h2>Latest Episodes</h2>
+                            <Link to="/all-episodes" style={{color: 'var(--cyan)', borderBottom: '1px solid var(--cyan)'}}>View all</Link>
                         </div>
-                        <h3 className="ep-title">Is your phone listening to you?</h3>
-                        <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
-                        <Link to="/is-your-phone-listening-to-you" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
-                    </div>
+                        
+                        <div className="episodes-grid">
+                            <div className="glass-card">
+                                <div className="ep-meta mono">
+                                    <span>EP 01</span>
+                                    <span>Privacy & Security</span>
+                                </div>
+                                <h3 className="ep-title">Is your phone listening to you?</h3>
+                                <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
+                                <Link to="/is-your-phone-listening-to-you" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            </div>
 
-                    <div className="glass-card">
-                        <div className="ep-meta mono">
-                            <span>EP 02</span>
-                            <span style={{color: 'var(--violet)'}}>AI & ML</span>
-                        </div>
-                        <h3 className="ep-title">What's behind the curtain of AI magic?</h3>
-                        <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>LLMs, prompt engineering, and why AI hallucinates. No math required.</p>
-                        <Link to="/episode/2" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
-                    </div>
+                            <div className="glass-card">
+                                <div className="ep-meta mono">
+                                    <span>EP 02</span>
+                                    <span style={{color: 'var(--violet)'}}>AI & ML</span>
+                                </div>
+                                <h3 className="ep-title">What's behind the curtain of AI magic?</h3>
+                                <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>LLMs, prompt engineering, and why AI hallucinates. No math required.</p>
+                                <Link to="/episode/2" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            </div>
 
-                    <div className="glass-card">
-                        <div className="ep-meta mono">
-                            <span>EP 03</span>
-                            <span style={{color: 'var(--amber)'}}>Personal Finance</span>
-                        </div>
-                        <h3 className="ep-title">Time beats Money in building wealth</h3>
-                        <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>The actual math behind SIPs, compounding, and tracking the Nifty 50.</p>
-                        <Link to="/episode/3" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
-                    </div>
+                            <div className="glass-card">
+                                <div className="ep-meta mono">
+                                    <span>EP 03</span>
+                                    <span style={{color: 'var(--amber)'}}>Personal Finance</span>
+                                </div>
+                                <h3 className="ep-title">Time beats Money in building wealth</h3>
+                                <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>The actual math behind SIPs, compounding, and tracking the Nifty 50.</p>
+                                <Link to="/episode/3" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            </div>
 
-                    <div className="glass-card">
-                        <div className="ep-meta mono">
-                            <span>EP 04</span>
-                            <span style={{color: 'var(--rose)'}}>Personal Finance</span>
+                            <div className="glass-card">
+                                <div className="ep-meta mono">
+                                    <span>EP 04</span>
+                                    <span style={{color: 'var(--rose)'}}>Personal Finance</span>
+                                </div>
+                                <h3 className="ep-title">Are you really financially safe?</h3>
+                                <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Emergency funds, insurance basics, and stress-testing your savings in ₹.</p>
+                                <Link to="/episode/4" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            </div>
                         </div>
-                        <h3 className="ep-title">Are you really financially safe?</h3>
-                        <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Emergency funds, insurance basics, and stress-testing your savings in ₹.</p>
-                        <Link to="/episode/4" className="play-btn" style={{display:'inline-block', textDecoration:'none'}}><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-            <section id="resources" className="container">
-                <div className="section-header">
-                    <h2>Resources and Tools</h2>
-                    <Link to="/all-resources" style={{color: 'var(--cyan)', borderBottom: '1px solid var(--cyan)'}}>View all</Link>
-                </div>
-                <div className="categories-grid">
-                    <div className="glass-card cat-card">
-                        <div className="cat-icon"><i className="fa-solid fa-newspaper" style={{color: 'var(--indigo)'}}></i></div>
-                        <div className="cat-info">
-                            <h3>Newsletter</h3>
-                            <p>Weekly insights & updates</p>
+                    {/* Ad 1 for Mobile */}
+                    <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
+                        <div style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                            [ Ad Space - 300x250 ]
                         </div>
-                    </div>
-                    {/* ... other resource cards ... */}
+                    </aside>
+
+                    <section id="resources">
+                        <div className="section-header">
+                            <h2>Resources and Tools</h2>
+                            <Link to="/all-resources" style={{color: 'var(--cyan)', borderBottom: '1px solid var(--cyan)'}}>View all</Link>
+                        </div>
+                        <div className="categories-grid">
+                            <div className="glass-card cat-card">
+                                <div className="cat-icon"><i className="fa-solid fa-newspaper" style={{color: 'var(--indigo)'}}></i></div>
+                                <div className="cat-info">
+                                    <h3>Newsletter</h3>
+                                    <p>Weekly insights & updates</p>
+                                </div>
+                            </div>
+                            {/* ... other resource cards ... */}
+                        </div>
+                    </section>
                 </div>
-            </section>
+
+                {/* Ad 1 for Desktop */}
+                <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
+                    <div style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                        [ Ad Space - 300x600 ]
+                    </div>
+                </aside>
+            </div>
 
             <section id="categories" className="container">
                 <div className="section-header">
@@ -104,6 +122,13 @@ const Home = () => {
                     {/* ... other category cards ... */}
                 </div>
             </section>
+
+            {/* Ad Placeholder 2 */}
+            <div className="container" style={{ padding: '40px 24px' }}>
+                <div style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px', width: '100%' }}>
+                    [ Ad Space - 728x90 ]
+                </div>
+            </div>
 
             <section id="about" className="container">
                 <div className="glass-card about-content" style={{padding: '48px'}}>
