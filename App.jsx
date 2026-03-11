@@ -11,6 +11,7 @@ import { PrivacyPolicy, TermsOfUse, Disclaimer, CookiePolicy } from './LegalPage
 import EpisodePage from './EpisodePage';
 import IsYourPhoneListeningToYou from './IsYourPhoneListeningToYou';
 import ScrollToTop from './ScrollToTop';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Layout>
