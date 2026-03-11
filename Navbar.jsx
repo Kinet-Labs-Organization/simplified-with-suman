@@ -62,14 +62,15 @@ const Navbar = () => {
                 <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>About</Link>
 
                 <button className="cta-btn" style={{display: isMobileMenuOpen ? 'flex' : 'none', width: '100%', justifyContent: 'center', marginTop: '12px'}} onClick={closeMenu}>
-                    <i className="fa-solid fa-play"></i> Subscribe
+                    {/* <i className="fa-solid fa-play"></i> Subscribe */}
+                    <i className="fa-solid fa-play"></i> Learn
                 </button>
             </div>
 
             {!isMobileMenuOpen && (
                 <button className="cta-btn desktop-cta">
                     <span className="mono" style={{fontSize: '0.75rem', background: 'rgba(0,0,0,0.2)', padding: '2px 8px', borderRadius: '10px', marginRight: '8px'}}>4 Live</span>
-                    <i className="fa-solid fa-play"></i> Subscribe
+                    <i className="fa-solid fa-play"></i> Learn
                 </button>
             )}
 

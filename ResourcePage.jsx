@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useScrollAnimation } from './useScrollAnimation';
 
 const ResourcePage = () => {
     const { slug } = useParams();
     useScrollAnimation();
+    const [email, setEmail] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
     const resources = {
         'newsletter': {
@@ -15,22 +17,26 @@ const ResourcePage = () => {
         'reading-list': {
             title: 'Reading List',
             description: 'A curated list of books on technology, finance, and philosophy that have shaped my thinking. Find your next great read here.',
-            icon: 'fa-solid fa-book-open'
+            icon: 'fa-solid fa-book-open',
+            itemLabel: 'books'
         },
         'tools-gear': {
             title: 'Tools & Gear',
             description: 'A complete breakdown of the software, hardware, and camera gear I use to produce Simplified with Suman.',
-            icon: 'fa-solid fa-wrench'
+            icon: 'fa-solid fa-wrench',
+            itemLabel: 'tools'
         },
         'community': {
             title: 'Community',
             description: 'Join the conversation on our Discord server. Ask questions, share ideas, and connect with other curious minds.',
-            icon: 'fa-solid fa-users'
+            icon: 'fa-solid fa-users',
+            itemLabel: 'community links'
         },
         'templates': {
             title: 'Templates',
             description: 'Download free templates for financial planning, project management, and content creation to streamline your workflow.',
-            icon: 'fa-solid fa-file-lines'
+            icon: 'fa-solid fa-file-lines',
+            itemLabel: 'templates'
         }
     };
 
@@ -46,6 +52,15 @@ const ResourcePage = () => {
             </main>
         );
     }
+
+    const handleNewsletterSubmit = (e) => {
+        e.preventDefault();
+        if (email) {
+            window.location.href = `mailto:kinetlabs@gmail.com?subject=Subscribe to SWS Newsletter&body=Subscribe to SWS Newsletter`;
+            setSubmitted(true);
+            setEmail('');
+        }
+    };
 
     return (
         <main style={{paddingTop: '80px', paddingBottom: '80px'}}>
@@ -69,7 +84,38 @@ const ResourcePage = () => {
                         </aside>
 
                         <div className="blog-content" style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.05rem' }}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            {slug === 'newsletter' ? ( !submitted ? (
+                                <form onSubmit={handleNewsletterSubmit} style={{ display: 'flex', gap: '16px', maxWidth: '500px', margin: '0 auto', flexWrap: 'wrap' }}>
+                                    <input
+                                        type="email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        placeholder="Enter your email address"
+                                        required
+                                        style={{
+                                            flex: 1,
+                                            minWidth: '200px',
+                                            padding: '12px 16px',
+                                            borderRadius: '50px',
+                                            border: '1px solid var(--glass-border)',
+                                            background: 'var(--glass-bg)',
+                                            color: 'var(--text-main)',
+                                            fontFamily: 'inherit'
+                                        }}
+                                    />
+                                    <button type="submit" className="cta-btn" style={{ minWidth: '120px' }}>Subscribe</button>
+                                </form>
+                            ) : (
+                                <div style={{textAlign: 'center', padding: '40px 0', background: 'rgba(6, 182, 212, 0.1)', borderRadius: '12px'}}>
+                                    <p style={{margin: 0, color: 'var(--cyan)', fontWeight: 'bold'}}>Thank you! Please send the pre-filled email from your mail client to complete your subscription.</p>
+                                </div>
+                            )
+                            ) : (
+                                <div style={{textAlign: 'center', padding: '40px 0', opacity: 0.6}}>
+                                    <i className="fa-solid fa-box-open" style={{fontSize: '3rem', marginBottom: '16px'}}></i>
+                                    <p>No {resource.itemLabel} added yet</p>
+                                </div>
+                            )}
                         </div>
                     </div>
 
