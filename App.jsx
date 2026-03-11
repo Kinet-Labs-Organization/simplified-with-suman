@@ -11,6 +11,9 @@ import { PrivacyPolicy, TermsOfUse, Disclaimer, CookiePolicy } from './LegalPage
 import EpisodePage from './EpisodePage';
 import ResourcePage from './ResourcePage';
 import IsYourPhoneListeningToYou from './IsYourPhoneListeningToYou';
+import WhatsBehindTheCurtainOfAIMagic from './WhatsBehindTheCurtainOfAIMagic';
+import TimeBeatsMoneyInBuildingWealth from './TimeBeatsMoneyInBuildingWealth';
+import AreYouReallyFinanciallySafe from './AreYouReallyFinanciallySafe';
 import ScrollToTop from './ScrollToTop';
 import NotFound from './NotFound';
 
@@ -26,6 +29,9 @@ function App() {
           <Route path="/all-episodes" element={<AllEpisodes />} />
           <Route path="/episode/:id" element={<EpisodePage />} />
           <Route path="/is-your-phone-listening-to-you" element={<IsYourPhoneListeningToYou />} />
+          <Route path="/whats-behind-the-curtain-of-ai-magic" element={<WhatsBehindTheCurtainOfAIMagic />} />
+          <Route path="/time-beats-money-in-building-wealth" element={<TimeBeatsMoneyInBuildingWealth />} />
+          <Route path="/are-you-really-financially-safe" element={<AreYouReallyFinanciallySafe />} />
           <Route path="/all-resources" element={<AllResources />} />
           <Route path="/resource/:slug" element={<ResourcePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

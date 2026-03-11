@@ -26,16 +26,16 @@ const Navbar = () => {
                 
                 <div className="dropdown">
                     <Link to="/all-episodes"
-                        className={`dropbtn ${location.pathname === '/all-episodes' || location.pathname.startsWith('/episode/') || location.pathname === '/is-your-phone-listening-to-you' ? 'active' : ''}`}
+                        className={`dropbtn ${location.pathname === '/all-episodes' || location.pathname.startsWith('/episode/') || location.pathname === '/is-your-phone-listening-to-you' || location.pathname === '/whats-behind-the-curtain-of-ai-magic' || location.pathname === '/time-beats-money-in-building-wealth' || location.pathname === '/are-you-really-financially-safe' ? 'active' : ''}`}
                         onClick={closeMenu}
                     >
                         Episodes <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
                     </Link>
                     <div className="dropdown-content">
                         <Link to="/is-your-phone-listening-to-you" onClick={closeMenu}>Ep 01: Is your phone listening?</Link>
-                        <Link to="/episode/2" onClick={closeMenu}>Ep 02: AI Magic</Link>
-                        <Link to="/episode/3" onClick={closeMenu}>Ep 03: Time beats Money</Link>
-                        <Link to="/episode/4" onClick={closeMenu}>Ep 04: Financial Safety</Link>
+                        <Link to="/whats-behind-the-curtain-of-ai-magic" onClick={closeMenu}>Ep 02: AI Magic</Link>
+                        <Link to="/time-beats-money-in-building-wealth" onClick={closeMenu}>Ep 03: Time beats Money</Link>
+                        <Link to="/are-you-really-financially-safe" onClick={closeMenu}>Ep 04: Financial Safety</Link>
                         <div style={{height: '1px', background: 'var(--glass-border)', margin: '8px 16px'}}></div>
                         <Link to="/all-episodes" style={{color: 'var(--cyan)', fontWeight: 600}} onClick={closeMenu}>View All Episodes &rarr;</Link>
                     </div>
@@ -61,17 +61,16 @@ const Navbar = () => {
 
                 <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>About</Link>
 
-                <button className="cta-btn" style={{display: isMobileMenuOpen ? 'flex' : 'none', width: '100%', justifyContent: 'center', marginTop: '12px'}} onClick={closeMenu}>
-                    {/* <i className="fa-solid fa-play"></i> Subscribe */}
+                <Link to="/all-episodes" className="cta-btn" style={{display: isMobileMenuOpen ? 'flex' : 'none', width: '100%', justifyContent: 'center', marginTop: '12px'}} onClick={closeMenu}>
                     <i className="fa-solid fa-play"></i> Learn
-                </button>
+                </Link>
             </div>
 
             {!isMobileMenuOpen && (
-                <button className="cta-btn desktop-cta">
+                <Link to="/all-episodes" className="cta-btn desktop-cta">
                     <span className="mono" style={{fontSize: '0.75rem', background: 'rgba(0,0,0,0.2)', padding: '2px 8px', borderRadius: '10px', marginRight: '8px'}}>4 Live</span>
                     <i className="fa-solid fa-play"></i> Learn
-                </button>
+                </Link>
             )}
 
             <button className="hamburger" id="menuBtn" onClick={toggleMenu}>

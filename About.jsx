@@ -43,7 +43,7 @@ const About = () => {
                                 <div className="badge mono" style={{color: 'var(--rose)', borderColor: 'rgba(244, 63, 94, 0.3)'}}>About the Host</div>
                                 <h2>Hi, I'm Suman Mandal.</h2>
                                 <p>I'm a Technical Lead, Micro-SaaS builder, and AI enthusiast based out of Kolkata. By day, I architect software solutions and explore algorithmic trading strategies. By night, I'm on a mission to make technology accessible.</p>
-                                <p>I started <strong>Simplified with Suman (SWS)</strong> because the world of tech, finance, and software has become drowning in jargon. Whether we are discussing the latest RBI/SEBI regulations, how LLMs actually process data, or how to build compounding wealth in India, my goal is simple: explain it in 15 minutes, with zero engineering speak.</p>
+                                <p>I started <strong>Simplified with Suman (SWS)</strong> because the world of tech, finance, and software has become drowning in jargon. Whether we are discussing the latest RBI/SEBI regulations, how LLMs actually process data, or how to build compounding wealth in India, my goal is simple: explain it in 10 minutes, with zero engineering speak.</p>
                                 <p>Just one real question, answered from first principles, leaving you with one usable takeaway.</p>
                             </div>
                             <div className="about-visual">
