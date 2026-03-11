@@ -49,10 +49,11 @@ const Navbar = () => {
                         Resources <i className="fa-solid fa-chevron-down" style={{fontSize: '0.7em', marginLeft: '4px'}}></i>
                     </Link>
                     <div className="dropdown-content">
-                        <a href="#" onClick={closeMenu}>Newsletter</a>
-                        <a href="#" onClick={closeMenu}>Reading List</a>
-                        <a href="#" onClick={closeMenu}>Tools & Gear</a>
-                        <a href="#" onClick={closeMenu}>Community</a>
+                        <Link to="/resource/newsletter" onClick={closeMenu}>Newsletter</Link>
+                        <Link to="/resource/reading-list" onClick={closeMenu}>Reading List</Link>
+                        <Link to="/resource/tools-gear" onClick={closeMenu}>Tools & Gear</Link>
+                        <Link to="/resource/community" onClick={closeMenu}>Community</Link>
+                        <Link to="/resource/templates" onClick={closeMenu}>Templates</Link>
                         <div style={{height: '1px', background: 'var(--glass-border)', margin: '8px 16px'}}></div>
                         <Link to="/all-resources" style={{color: 'var(--cyan)', fontWeight: 600}} onClick={closeMenu}>View All Resources &rarr;</Link>
                     </div>

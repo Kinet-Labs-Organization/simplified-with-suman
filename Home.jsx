@@ -80,14 +80,34 @@ const Home = () => {
                             <Link to="/all-resources" style={{color: 'var(--cyan)', borderBottom: '1px solid var(--cyan)'}}>View all</Link>
                         </div>
                         <div className="categories-grid">
-                            <div className="glass-card cat-card">
+                            <Link to="/resource/newsletter" className="glass-card cat-card">
                                 <div className="cat-icon"><i className="fa-solid fa-newspaper" style={{color: 'var(--indigo)'}}></i></div>
                                 <div className="cat-info">
                                     <h3>Newsletter</h3>
                                     <p>Weekly insights & updates</p>
                                 </div>
-                            </div>
-                            {/* ... other resource cards ... */}
+                            </Link>
+                            <Link to="/resource/reading-list" className="glass-card cat-card">
+                                <div className="cat-icon"><i className="fa-solid fa-book-open" style={{color: 'var(--green)'}}></i></div>
+                                <div className="cat-info">
+                                    <h3>Reading List</h3>
+                                    <p>Books that shaped my thinking</p>
+                                </div>
+                            </Link>
+                            <Link to="/resource/tools-gear" className="glass-card cat-card">
+                                <div className="cat-icon"><i className="fa-solid fa-wrench" style={{color: 'var(--amber)'}}></i></div>
+                                <div className="cat-info">
+                                    <h3>Tools & Gear</h3>
+                                    <p>My software & hardware stack</p>
+                                </div>
+                            </Link>
+                            <Link to="/resource/community" className="glass-card cat-card">
+                                <div className="cat-icon"><i className="fa-solid fa-users" style={{color: 'var(--rose)'}}></i></div>
+                                <div className="cat-info">
+                                    <h3>Community</h3>
+                                    <p>Join the conversation</p>
+                                </div>
+                            </Link>
                         </div>
                     </section>
                 </div>
