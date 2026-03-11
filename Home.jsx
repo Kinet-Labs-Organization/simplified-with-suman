@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from './useScrollAnimation';
+import AdSlot from './AdSlot';
 
 const Home = () => {
     useScrollAnimation();
@@ -68,11 +69,13 @@ const Home = () => {
                     </section>
 
                     {/* Ad 1 for Mobile */}
-                    <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
+                    {/* <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
                         <div id="ad-slot-home-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
                             [ Ad Space - 300x250 ]
                         </div>
-                    </aside>
+                    </aside> */}
+                    <AdSlot adSlotId="4803562350" />
+
 
                     <section id="resources">
                         <div className="section-header">
