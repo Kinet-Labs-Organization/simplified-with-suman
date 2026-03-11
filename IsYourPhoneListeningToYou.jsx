@@ -23,13 +23,13 @@ const IsYourPhoneListeningToYou = () => {
                             <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>We pull back the curtain on data brokers, DPDPA 2023, and the "digital magic" behind ad tracking.</p>
                         </header>
 
-                        {/* Video Player Placeholder */}
-                        <div style={{ width: '100%', aspectRatio: '16/9', background: 'rgba(0,0,0,0.3)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '40px 0 48px 0', border: '1px solid var(--glass-border)' }}>
+                        {/* Video Player Placeholder - To be implemented */}
+                        {/* <div style={{ width: '100%', aspectRatio: '16/9', background: 'rgba(0,0,0,0.3)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '40px 0 48px 0', border: '1px solid var(--glass-border)' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <i className="fa-solid fa-play-circle" style={{ fontSize: '4rem', color: 'var(--cyan)', marginBottom: '16px', cursor: 'pointer' }}></i>
                                 <p style={{ color: 'var(--text-muted)' }}>Watch the full explanation (10:00)</p>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Sidebar Ad for Mobile/Tablet */}
                         <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>

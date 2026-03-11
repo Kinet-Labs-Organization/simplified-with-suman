@@ -28,7 +28,7 @@ const AllEpisodes = () => {
                             </div>
                             <h3 className="ep-title">Is your phone listening to you?</h3>
                             <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Understanding data brokers, DPDPA 2023, and how ad tracking really works.</p>
-                            <Link to="/is-your-phone-listening-to-you" className="play-btn"><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            <Link to="/is-your-phone-listening-to-you" className="play-btn"><i className="fa-solid fa-play"></i> Read (10:00)</Link>
                         </div>
 
                         <div className="glass-card">
@@ -38,7 +38,7 @@ const AllEpisodes = () => {
                             </div>
                             <h3 className="ep-title">What's behind the curtain of AI magic?</h3>
                             <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>LLMs, prompt engineering, and why AI hallucinates. No math required.</p>
-                            <Link to="/episode/2" className="play-btn"><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            <Link to="/episode/2" className="play-btn"><i className="fa-solid fa-play"></i> Read (10:00)</Link>
                         </div>
 
                         <div className="glass-card">
@@ -48,7 +48,7 @@ const AllEpisodes = () => {
                             </div>
                             <h3 className="ep-title">Time beats Money in building wealth</h3>
                             <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>The actual math behind SIPs, compounding, and tracking the Nifty 50.</p>
-                            <Link to="/episode/3" className="play-btn"><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            <Link to="/episode/3" className="play-btn"><i className="fa-solid fa-play"></i> Read (10:00)</Link>
                         </div>
 
                         <div className="glass-card">
@@ -58,7 +58,7 @@ const AllEpisodes = () => {
                             </div>
                             <h3 className="ep-title">Are you really financially safe?</h3>
                             <p style={{color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px'}}>Emergency funds, insurance basics, and stress-testing your savings in ₹.</p>
-                            <Link to="/episode/4" className="play-btn"><i className="fa-solid fa-play"></i> Watch (10:00)</Link>
+                            <Link to="/episode/4" className="play-btn"><i className="fa-solid fa-play"></i> Read (10:00)</Link>
                         </div>
                     </div>
                 </div>

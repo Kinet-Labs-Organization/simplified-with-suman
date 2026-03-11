@@ -14,7 +14,7 @@ const LegalLayout = ({ title, lastUpdated, badgeColor, badgeText, children }) =>
                     <div style={{marginTop: '40px'}}>
                         <h2>Contact Us</h2>
                         <p>If you have any questions, please contact us at:</p>
-                        <p className="mono" style={{color: 'var(--text-main)'}}>suman.mandal.231293@gmail.com</p>
+                        <p className="mono" style={{color: 'var(--text-main)'}}>kinetlabs@gmail.com</p>
                     </div>
                 </div>
             </div>

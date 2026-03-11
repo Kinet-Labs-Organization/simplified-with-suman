@@ -42,8 +42,8 @@ const Footer = () => {
             </div>
             
             <div className="legal-text">
-                <p>&copy; 2026 Suman Mandal. All rights reserved. Made in Kolkata, India.</p>
-                <p style={{marginTop: '8px'}}>Disclaimer: Content provided on SWS is for educational purposes only and does not constitute financial or investment advice. Always consult with a SEBI-registered advisor before making investment decisions.</p>
+                <p>&copy; 2026 Simplified with Suman. All rights reserved. Made in India with Love.</p>
+                <p style={{marginTop: '8px'}}>Disclaimer: Content provided on SWS is for educational and awareness purposes only</p>
             </div>
         </footer>
     );
