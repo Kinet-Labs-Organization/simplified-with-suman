@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from './useScrollAnimation';
+import { GlobalShowCustomAdSpace } from './config';
 
 const AllEpisodes = () => {
     useScrollAnimation();
@@ -14,11 +15,13 @@ const AllEpisodes = () => {
                     </div>
 
                     {/* Mobile Ad */}
-                    <aside className="sidebar-mobile" style={{ margin: '0 0 40px 0' }}>
-                        <div id="ad-slot-episodes-page-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                            [ Ad Space - 300x250 ]
-                        </div>
-                    </aside>
+                    {GlobalShowCustomAdSpace && (
+                        <aside className="sidebar-mobile" style={{ margin: '0 0 40px 0' }}>
+                            <div id="ad-slot-episodes-page-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                                [ Ad Space - 300x250 ]
+                            </div>
+                        </aside>
+                    )}
 
                     <div className="episodes-grid">
                         <div className="glass-card">
@@ -64,11 +67,13 @@ const AllEpisodes = () => {
                 </div>
 
                 {/* Desktop Sidebar */}
-                <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                    <div id="ad-slot-episodes-page-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                        [ Ad Space - 300x600 ]
-                    </div>
-                </aside>
+                {GlobalShowCustomAdSpace && (
+                    <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
+                        <div id="ad-slot-episodes-page-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                            [ Ad Space - 300x600 ]
+                        </div>
+                    </aside>
+                )}
             </div>
         </main>
     );

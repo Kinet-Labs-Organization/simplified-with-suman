@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useScrollAnimation } from './useScrollAnimation';
+import { GlobalShowCustomAdSpace } from './config';
 
 const ResourcePage = () => {
     const { slug } = useParams();
@@ -77,11 +78,13 @@ const ResourcePage = () => {
                         <p style={{color: 'var(--text-muted)', fontSize: '1.2rem', textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px auto'}}>{resource.description}</p>
 
                         {/* Mobile Ad */}
-                        <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
-                            <div id="ad-slot-resource-page-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                                [ Ad Space - 300x250 ]
-                            </div>
-                        </aside>
+                        {GlobalShowCustomAdSpace && (
+                            <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
+                                <div id="ad-slot-resource-page-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                                    [ Ad Space - 300x250 ]
+                                </div>
+                            </aside>
+                        )}
 
                         <div className="blog-content" style={{ color: 'var(--text-main)', lineHeight: '1.8', fontSize: '1.05rem' }}>
                             {slug === 'newsletter' ? ( !submitted ? (
@@ -120,11 +123,13 @@ const ResourcePage = () => {
                     </div>
 
                     {/* Desktop Sidebar */}
-                    <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                        <div id="ad-slot-resource-page-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                            [ Ad Space - 300x600 ]
-                        </div>
-                    </aside>
+                    {GlobalShowCustomAdSpace && (
+                        <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
+                            <div id="ad-slot-resource-page-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                                [ Ad Space - 300x600 ]
+                            </div>
+                        </aside>
+                    )}
                 </div>
             </div>
         </main>

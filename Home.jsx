@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from './useScrollAnimation';
 import AdSlot from './AdSlot';
+import { GlobalShowCustomAdSpace } from './config';
 
 const Home = () => {
     useScrollAnimation();
@@ -69,12 +70,7 @@ const Home = () => {
                     </section>
 
                     {/* Ad 1 for Mobile */}
-                    {/* <aside className="sidebar-mobile" style={{ margin: '40px 0' }}>
-                        <div id="ad-slot-home-sidebar-mobile" style={{ height: '250px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                            [ Ad Space - 300x250 ]
-                        </div>
-                    </aside> */}
-                    <AdSlot adSlotId="4803562350" />
+                    {GlobalShowCustomAdSpace && <AdSlot adSlotId="4803562350" />}
 
 
                     <section id="resources">
@@ -116,11 +112,13 @@ const Home = () => {
                 </div>
 
                 {/* Ad 1 for Desktop */}
-                <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
-                    <div id="ad-slot-home-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
-                        [ Ad Space - 300x600 ]
-                    </div>
-                </aside>
+                {GlobalShowCustomAdSpace && (
+                    <aside className="sidebar-desktop" style={{ position: 'sticky', top: '120px' }}>
+                        <div id="ad-slot-home-sidebar-desktop" style={{ height: '600px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)', fontFamily: 'monospace' }}>
+                            [ Ad Space - 300x600 ]
+                        </div>
+                    </aside>
+                )}
             </div>
 
             <section id="categories" className="container">
@@ -147,11 +145,13 @@ const Home = () => {
             </section>
 
             {/* Ad Placeholder 2 */}
-            <div className="container" style={{ padding: '40px 24px' }}>
-                <div id="ad-slot-home-bottom" style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px', width: '100%' }}>
-                    [ Ad Space - 728x90 ]
+            {GlobalShowCustomAdSpace && (
+                <div className="container" style={{ padding: '40px 24px' }}>
+                    <div id="ad-slot-home-bottom" style={{ height: '100px', background: 'rgba(255, 255, 255, 0.02)', border: '1px dashed var(--glass-border)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto', color: 'var(--text-muted)', fontFamily: 'monospace', maxWidth: '728px', width: '100%' }}>
+                        [ Ad Space - 728x90 ]
+                    </div>
                 </div>
-            </div>
+            )}
 
             <section id="about" className="container">
                 <div className="glass-card about-content" style={{padding: '48px'}}>
