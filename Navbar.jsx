@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="glass">
             <Link to="/" className="logo" onClick={closeMenu}>
-                <div className="logo-box">SWS-1</div>
+                <div className="logo-box">SWS</div>
                 <span className="logo-text">Simplified with Suman</span>
             </Link>
             
